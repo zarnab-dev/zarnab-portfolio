@@ -265,20 +265,15 @@
 
 <script>
 function copyLink() {
-    const dummy = document.createElement("input");
-    const url = "https://zarnab-portfolio.com";
+    const url = "https://zarnab-dev.github.io/zarnab-portfolio/";
 
-    document.body.appendChild(dummy);
-    dummy.value = url;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
-
-    const btn = document.querySelector('.share-btn');
-    btn.innerText = "Copied!";
-    setTimeout(() => {
-        btn.innerText = "Share";
-    }, 2000);
+    navigator.clipboard.writeText(url).then(() => {
+        const btn = document.querySelector('.share-btn');
+        btn.innerText = "Copied!";
+        setTimeout(() => {
+            btn.innerText = "Share";
+        }, 2000);
+    });
 }
 </script>
 
