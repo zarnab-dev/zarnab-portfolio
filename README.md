@@ -1,4 +1,4 @@
-# Zarnab Laeeq-ur-Rehman | Professional Portfolio
+# Zarnab Laeeq-ur-Rehman | Portfolio
 
 This repository hosts my personal portfolio website, developed to present my academic background, professional experience, technical competencies, and leadership involvement as a Software Engineering student.
 
