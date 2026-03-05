@@ -14,34 +14,76 @@ body {
 header {
     position: fixed;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 5%;
     background: rgba(0,0,0,0.9);
     z-index: 1000;
 }
+/* ===== NAVBAR ===== */
 
+header {
+    position: fixed;
+    width: 100%;
+    padding: 18px 8%;
+    background: rgba(0,0,0,0.92);
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
+nav ul li {
+    white-space: nowrap;
+}
+/* Logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 18px;
+}
+/* Navigation list */
+
+
+nav ul li {
+    white-space: nowrap;
 }
 
+/* Nav links */
 nav a {
     text-decoration: none;
     color: white;
     font-weight: 500;
+    position: relative;
+    padding-bottom: 6px;
 }
 
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
+/* Underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #6b705c;
+    transition: width 0.35s ease;
 }
 
+nav a:hover::after {
+    width: 100%;
+}
+nav a:hover {
+    color: #a5a58d;
+}
 .hero-container {
     display: flex;
     align-items: center;
@@ -250,6 +292,22 @@ nav a {
     position: relative;
 }
 
+/* underline animation */
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #6b705c;
+    transition: width 0.3s ease;
+}
+
+/* hover effect */
+nav a:hover::after{
+    width: 100%;
+}
 nav a::after {
     content: "";
     position: absolute;
@@ -347,4 +405,33 @@ section:nth-child(even) {
 #certifications {
     background: #cecbc4;   /* beige */
     color: black;
+}
+
+/* Resume Section Professional Styling */
+
+.resume-heading {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.resume-card {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.resume-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.resume-text {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
