@@ -11,13 +11,6 @@ body {
     scroll-behavior: smooth;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    padding: 20px 5%;
-    background: rgba(0,0,0,0.9);
-    z-index: 1000;
-}
 /* ===== NAVBAR ===== */
 
 header {
@@ -48,13 +41,7 @@ nav ul li {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 18px;
-}
-/* Navigation list */
-
-
-nav ul li {
-    white-space: nowrap;
+    gap: 20px;
 }
 
 /* Nav links */
